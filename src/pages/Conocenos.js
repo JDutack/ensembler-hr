@@ -208,7 +208,6 @@ const Icon = styled.div`
   text-align: center;
   cursor: pointer;
   background-image: url(${linkedin});
-  /* background-size: cover; */
   &:hover {
     background-color: #ccc;
     border: 4px solid #0f6bb6;

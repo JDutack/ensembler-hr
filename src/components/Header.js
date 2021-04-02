@@ -1,5 +1,5 @@
 import React from 'react';
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import styled from 'styled-components';
 import icoImg from '../assets/ofkkbMI.png';
 
@@ -35,15 +35,13 @@ const HeaderImg = styled.img`
     height: 60px;
   }
 `;
-const NavUl = styled.ul`
-  /* text-align: left; */
-  /* width: 100%; */
-  /* display: flex; */
-  /* flex-direction: row; */
-  /* justify-content: left; */
+
+const Navegacion = styled.nav`
+  display: flex;
+  flex-direction: row;
 `;
-const HeaderLink = styled.a`
-  text-decoration: none;
+
+const HeaderLink = styled.div`
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
   color: #dc1d25;
@@ -55,6 +53,7 @@ const HeaderLink = styled.a`
     -webkit-filter: blur(0.5px);
     filter: blur(0.5px);
   }
+
   @media (max-width: 865px) {
     font-size: 15px;
     padding: 22px;
@@ -69,16 +68,44 @@ const Header = () => {
   return (
     <HeaderAll>
       <HeaderLink href="/" id="isologotipo">
-        <HeaderImg src={icoImg} alt="isologotipo" />
+        <Link>
+          <HeaderImg src={icoImg} alt="isologotipo" />
+        </Link>
       </HeaderLink>
-      <NavUl>
-        <HeaderLink href="/" target="_self">
-          Inicio
+      <Navegacion>
+        <HeaderLink>
+          <Link
+            style={{ textDecoration: 'none', color: ' rgb(220, 29, 37)' }}
+            to="/"
+          >
+            Inicio
+          </Link>
         </HeaderLink>
-        <HeaderLink href="/conocenos">Conócenos</HeaderLink>
-        <HeaderLink href="/contacto">Contacto</HeaderLink>
-        <HeaderLink href="#">Idioma/Language</HeaderLink>
-      </NavUl>
+        <HeaderLink>
+          <Link
+            style={{ textDecoration: 'none', color: ' rgb(220, 29, 37)' }}
+            to="/conocenos"
+          >
+            Conócenos
+          </Link>
+        </HeaderLink>
+        <HeaderLink>
+          <Link
+            style={{ textDecoration: 'none', color: ' rgb(220, 29, 37)' }}
+            to="/contacto"
+          >
+            Contacto
+          </Link>
+        </HeaderLink>
+        <HeaderLink>
+          <Link
+            style={{ textDecoration: 'none', color: ' rgb(220, 29, 37)' }}
+            to="/"
+          >
+            Idioma/Language
+          </Link>
+        </HeaderLink>
+      </Navegacion>
     </HeaderAll>
   );
 };
