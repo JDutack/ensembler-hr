@@ -6,6 +6,11 @@ const Formulario = styled.form`
   display: flex;
   width: 400px;
   flex-direction: column;
+  @media (max-width: 790px) {
+  }
+  @media (max-width: 650px) {
+    width: 300px;
+  }
 `;
 
 const FormInput = styled.input`
@@ -22,6 +27,7 @@ const FormInput = styled.input`
   }
   @media (max-width: 650px) {
     flex-direction: column;
+    width: 300px;
   }
 `;
 
@@ -34,6 +40,12 @@ const FormTextArea = styled.textarea`
   border-bottom: 2px solid #de1d26;
   &:focus {
     outline: none;
+  }
+  @media (max-width: 790px) {
+  }
+  @media (max-width: 650px) {
+    /* flex-direction: column; */
+    width: 300px;
   }
 `;
 
@@ -55,10 +67,12 @@ const FormButton = styled.button`
     color: white;
   }
   @media (max-width: 790px) {
+    font-size: 17px;
+    font-weight: bold;
   }
   @media (max-width: 650px) {
     font-size: 15px;
-    font-weight: bold;
+    /* font-weight: bold; */
   }
 `;
 

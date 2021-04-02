@@ -9,6 +9,7 @@ import backFooter from '../assets/fondoFooter.jfif';
 const FooterComp = styled.footer`
   background-image: url(${backFooter});
   background-size: cover;
+  margin-bottom: 50px;
 `;
 
 const FooterBack = styled.div`
@@ -18,7 +19,14 @@ const FooterBack = styled.div`
 const FooterTitle = styled.h3`
   color: white;
   font-size: 45px;
+  @media (max-width: 1400px) {
+    font-size: 30px;
+  }
+  @media (max-width: 1000px) {
+    font-size: 26px;
+  }
   @media (max-width: 790px) {
+    font-size: 22px;
   }
   @media (max-width: 650px) {
     font-size: 15px;
@@ -38,6 +46,8 @@ const FooterImg = styled.img`
   width: 500px;
   height: 150px;
   @media (max-width: 790px) {
+    width: 400px;
+    height: 100px;
   }
   @media (max-width: 650px) {
     width: 300px;
@@ -52,7 +62,7 @@ const Footer = () => {
       <FooterBack>
         <ConclusionContainer data-aos="zoom-in">
           <FooterTitle>
-            Queremos dejar una marca positiva en el mundo. ¿Te sumás?.
+            Queremos dejar una marca positiva en el mundo ¿Te sumás?
           </FooterTitle>
           <FooterImg src={footerImg} alt="isologotipo-ensemble" />
         </ConclusionContainer>

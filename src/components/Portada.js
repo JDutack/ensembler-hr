@@ -7,6 +7,8 @@ const ImgPortada = styled.img`
   height: 900px;
   width: 900px;
   @media (max-width: 790px) {
+    height: 600px;
+    width: 600px;
   }
   @media (max-width: 650px) {
     height: 500px;

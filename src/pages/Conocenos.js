@@ -1,10 +1,13 @@
 import React, { Fragment } from 'react';
 import styled from 'styled-components';
-import Header from '../components/Header';
+
 import { Gradient } from '../components/Portada';
-import AOS from 'aos';
-import 'aos/dist/aos.css';
+import Header from '../components/Header';
 import Footer from '../components/Footer';
+
+import linkedin from '../assets/linkedin.svg';
+import belen from '../assets/belen.jfif';
+import fondoCards from '../assets/fondocards.jpg';
 
 const ConocenosInfo = styled.div`
   padding: 100px;
@@ -23,6 +26,7 @@ const ConocenosTitle = styled.h3`
   color: white;
   font-family: 'Roboto', sans-serif;
   @media (max-width: 790px) {
+    font-size: 35px;
   }
   @media (max-width: 650px) {
     font-size: 30px;
@@ -39,7 +43,13 @@ const ConocenosP = styled.p`
   line-height: 20px;
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 2px 25px 25px 25px;
+  box-shadow: 0px 0px 37px 17px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: 0px 0px 37px 17px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 37px 17px rgba(0, 0, 0, 0.75);
   @media (max-width: 790px) {
+    word-spacing: 2.5px;
+    font-size: 15px;
+    width: 450px;
   }
   @media (max-width: 650px) {
     word-spacing: 0;
@@ -57,6 +67,9 @@ const ValoresContainer = styled.div`
   line-height: 40px;
   background-color: rgba(255, 255, 255, 0.5);
   border-radius: 25px 2px 25px 2px;
+  box-shadow: 0px 50px 94px 51px rgba(0, 0, 0, 0.72);
+  -webkit-box-shadow: 0px 50px 94px 51px rgba(0, 0, 0, 0.72);
+  -moz-box-shadow: 0px 50px 94px 51px rgba(0, 0, 0, 0.72);
 `;
 
 const ValoresUl = styled.ul`
@@ -67,9 +80,139 @@ const ValoresLi = styled.li`
   font-size: 20px;
   font-weight: bold;
   @media (max-width: 790px) {
+    font-size: 18px;
   }
   @media (max-width: 650px) {
     font-size: 15px;
+  }
+`;
+const FoundersDiv = styled.section`
+  display: flex;
+  flex-direction: column;
+  /* width: 100%; */
+  padding: 100px 25px;
+  background-image: url(${fondoCards});
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+`;
+
+const FounderDiv = styled.div`
+  background-color: rgba(156, 158, 160, 0.6);
+  width: 30%;
+  align-self: flex-end;
+  height: min-content;
+  border-radius: 8px;
+  /* border: 1px solid black; */
+  padding: 10px;
+`;
+
+const FounderImageDiv = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: flex-end;
+  /* padding-right: 20px; */
+`;
+
+const FounderImg = styled.img`
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+`;
+const FounderData = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
+const CofounderDiv = styled.div`
+  width: 50%;
+  justify-self: center;
+  height: min-content;
+  /* width: 300px; */
+  border: 1px solid black;
+`;
+
+const CofounderImageDiv = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: flex-start;
+`;
+
+const CofounderData = styled.div`
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+`;
+
+const LinkeImg = styled.img`
+  width: 30px;
+  height: 30px;
+`;
+
+const PortaRedes = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 45px;
+  height: 45px;
+  border: 1px solid black;
+  border-radius: 50%;
+  background-color: wheat;
+`;
+
+const CardCollectionDiv = styled.div`
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+`;
+
+const PersonalCard = styled.div`
+  background-color: white;
+  width: calc(100% / 3 - 20px);
+  min-width: 250px;
+  margin: 10px;
+  padding: 30px 0;
+  border-bottom: 2px solid #ccc;
+`;
+const PersonalImage = styled.div`
+  margin: auto;
+  text-align: center;
+  height: 148px;
+  & img {
+    margin: auto;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 4px solid #35b652;
+  }
+`;
+const PersonalInfo = styled.div`
+  text-align: center;
+  padding-top: 30px;
+  font-family: 'HKGrotesk', sans-serif !important;
+`;
+const SocialIcons = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+`;
+const Icon = styled.div`
+  border: 2px solid #0f6bb6;
+  padding: 8px;
+  margin: 8px;
+  font-size: 14pt;
+  border-radius: 50%;
+  width: 16px;
+  height: 16px;
+  text-align: center;
+  cursor: pointer;
+  background-image: url(${linkedin});
+  /* background-size: cover; */
+  &:hover {
+    background-color: #ccc;
+    border: 4px solid #0f6bb6;
+    padding: 6px;
   }
 `;
 
@@ -123,6 +266,61 @@ const Conocenos = () => {
           </ValoresContainer>
         </div>
       </ConocenosInfo>
+      <FoundersDiv>
+        <FounderDiv>
+          <FounderImageDiv>
+            <FounderImg src={belen} alt="" />
+          </FounderImageDiv>
+          <FounderData>
+            <h3>María Belén Arroyo</h3>
+            <h4>Founder Ensemble HR</h4>
+          </FounderData>
+          <PortaRedes>
+            <LinkeImg src={linkedin} alt="" />
+          </PortaRedes>
+        </FounderDiv>
+        <CardCollectionDiv>
+          <PersonalCard>
+            <PersonalImage>
+              <img src={belen} alt="" />
+            </PersonalImage>
+            <PersonalInfo>
+              <h3>María Belén Arroyo</h3>
+              <h4>Founder Ensemble HR</h4>
+              <p>
+                Organizadora de Eventos | Estudiante de Relaciones del Trabajo
+              </p>
+            </PersonalInfo>
+            <div class="social-info">
+              <SocialIcons>
+                <Icon></Icon>
+                <Icon></Icon>
+                <Icon></Icon>
+                <Icon></Icon>
+              </SocialIcons>
+              <div class="social-details">
+                <div class="details"></div>
+                <div class="details"></div>
+                <div class="details"></div>
+                <div class="details"></div>
+              </div>
+            </div>
+          </PersonalCard>
+        </CardCollectionDiv>
+        <CofounderDiv>
+          <CofounderData>
+            <h3>Facundo Corbalan</h3>
+            <h4>Co founder Ensemble HR</h4>
+            <p>Experto en Payroll y procesos de implementación.</p>
+          </CofounderData>
+          <PortaRedes>
+            <LinkeImg src={linkedin} alt="" />
+          </PortaRedes>
+          <CofounderImageDiv>
+            <FounderImg src={belen} alt="" />
+          </CofounderImageDiv>
+        </CofounderDiv>
+      </FoundersDiv>
       <Footer />
     </Fragment>
   );

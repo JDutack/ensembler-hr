@@ -14,6 +14,8 @@ const LinkImg = styled.img`
   width: 60px;
   padding: 0px 20px 0px 0px;
   @media (max-width: 790px) {
+    height: 45px;
+    width: 45px;
   }
   @media (max-width: 650px) {
     height: 30px;
@@ -23,14 +25,16 @@ const LinkImg = styled.img`
 
 const ContainerContacto = styled.div`
   height: 800px;
-  /* padding: 150px; */
   display: flex;
   align-items: center;
   justify-content: center;
   background: linear-gradient(-45deg, #ecf0f1, #bdc3c7, #2ecc71, #27ae60);
   background-size: 400% 400%;
   animation: ${Gradient} 10s ease infinite;
-  @media (max-width: 790px) {
+
+  @media (max-width: 1100px) {
+    flex-direction: column;
+    padding: 180px;
   }
   @media (max-width: 650px) {
     flex-direction: column;
@@ -40,8 +44,6 @@ const ContainerContacto = styled.div`
 
 const FormularioEncuesta = styled.div`
   display: flex;
-  /* width: min-content; */
-  /* height: min-content; */
   font-size: 25px;
   font-family: 'Raleway', sans-serif;
   color: #de1d26;
@@ -49,7 +51,11 @@ const FormularioEncuesta = styled.div`
   padding: 50px;
   margin: 70px;
   border-radius: 25px;
+  box-shadow: 0px -3px 7px 3px rgba(0, 0, 0, 0.88);
+  -webkit-box-shadow: 0px -3px 7px 3px rgba(0, 0, 0, 0.88);
+  -moz-box-shadow: 0px -3px 7px 3px rgba(0, 0, 0, 0.88);
   @media (max-width: 790px) {
+    font-size: 20px;
   }
   @media (max-width: 650px) {
     font-size: 15px;
@@ -66,7 +72,11 @@ const DatosContacto = styled.div`
   flex-direction: column;
   /* align-content: stretch; */
   justify-content: space-evenly;
-  @media (max-width: 790px) {
+  @media (max-width: 1100px) {
+    height: min-content;
+    width: 450px;
+    border: none;
+    font-size: 16px;
   }
   @media (max-width: 650px) {
     height: min-content;
@@ -78,6 +88,7 @@ const DatosContacto = styled.div`
 
 const ContactoA = styled.a`
   color: white;
+  font-size: 15px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -89,8 +100,17 @@ const ContactoA = styled.a`
   border-radius: 15px 2px 15px 2px;
   transition-duration: 0.5s;
   cursor: pointer;
+  box-shadow: 0px -3px 7px 3px rgba(0, 0, 0, 0.88);
+  -webkit-box-shadow: 0px -3px 7px 3px rgba(0, 0, 0, 0.88);
+  -moz-box-shadow: 0px -3px 7px 3px rgba(0, 0, 0, 0.88);
   &:hover {
     background-color: #ea5e64;
+  }
+  @media (max-width: 1150px) {
+    font-size: 14px;
+  }
+  @media (max-width: 650px) {
+    font-size: 11px;
   }
 `;
 

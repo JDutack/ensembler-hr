@@ -2,6 +2,7 @@ import { createGlobalStyle } from 'styled-components';
 
 export const GlobalStyle = createGlobalStyle`
    @import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+  
 
 html,
 body {
@@ -11,5 +12,11 @@ body {
   height: min-content;
   background-color: #e4e4e4;
 }
+
+${'' /* .name{
+	font-size: 14pt;
+	font-weight: bold;
+} */}
+
 
 `;

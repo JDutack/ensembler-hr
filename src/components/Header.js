@@ -12,6 +12,7 @@ const HeaderAll = styled.header`
   background-color: rgba(255, 255, 255, 0.8);
   height: 110px;
   @media (max-width: 790px) {
+    height: 85px;
   }
   @media (max-width: 650px) {
     height: 60px;
@@ -26,6 +27,8 @@ const HeaderImg = styled.img`
     filter: blur(100px);
   }
   @media (max-width: 790px) {
+    width: 90px;
+    height: 90px;
   }
   @media (max-width: 650px) {
     width: 60px;
@@ -52,7 +55,9 @@ const HeaderLink = styled.a`
     -webkit-filter: blur(0.5px);
     filter: blur(0.5px);
   }
-  @media (max-width: 790px) {
+  @media (max-width: 865px) {
+    font-size: 15px;
+    padding: 22px;
   }
   @media (max-width: 650px) {
     font-size: 10px;
