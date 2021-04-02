@@ -13,10 +13,4 @@ body {
   background-color: #e4e4e4;
 }
 
-${'' /* .name{
-	font-size: 14pt;
-	font-weight: bold;
-} */}
-
-
 `;

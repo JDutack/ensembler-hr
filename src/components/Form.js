@@ -1,6 +1,26 @@
 import React from 'react';
 import styled from 'styled-components';
 
+const FormularioEncuesta = styled.div`
+  display: flex;
+  font-size: 25px;
+  font-family: 'Raleway', sans-serif;
+  color: #de1d26;
+  background-color: white;
+  padding: 50px;
+  margin: 70px;
+  border-radius: 25px;
+  box-shadow: 0px -3px 7px 3px rgba(0, 0, 0, 0.88);
+  -webkit-box-shadow: 0px -3px 7px 3px rgba(0, 0, 0, 0.88);
+  -moz-box-shadow: 0px -3px 7px 3px rgba(0, 0, 0, 0.88);
+  @media (max-width: 790px) {
+    font-size: 20px;
+  }
+  @media (max-width: 650px) {
+    font-size: 15px;
+  }
+`;
+
 const Formulario = styled.form`
   height: max-content;
   display: flex;
@@ -78,25 +98,27 @@ const FormButton = styled.button`
 
 const Form = () => {
   return (
-    <Formulario>
-      <FormLabel htmlFor="nombre">Nombre</FormLabel>
+    <FormularioEncuesta>
+      <Formulario>
+        <FormLabel htmlFor="nombre">Nombre</FormLabel>
 
-      <FormInput type="text" id="nombre" />
+        <FormInput type="text" id="nombre" />
 
-      <FormLabel htmlFor="apellido">Apellido</FormLabel>
+        <FormLabel htmlFor="apellido">Apellido</FormLabel>
 
-      <FormInput type="text" id="apellido" />
+        <FormInput type="text" id="apellido" />
 
-      <FormLabel htmlFor="mail">Correo Electrónico</FormLabel>
+        <FormLabel htmlFor="mail">Correo Electrónico</FormLabel>
 
-      <FormInput type="text" id="mail" />
+        <FormInput type="text" id="mail" />
 
-      <FormLabel htmlFor="consulta">Consulta</FormLabel>
+        <FormLabel htmlFor="consulta">Consulta</FormLabel>
 
-      <FormTextArea type="text" id="consulta" />
+        <FormTextArea type="text" id="consulta" />
 
-      <FormButton>ENVIAR</FormButton>
-    </Formulario>
+        <FormButton>ENVIAR</FormButton>
+      </Formulario>
+    </FormularioEncuesta>
   );
 };
 
