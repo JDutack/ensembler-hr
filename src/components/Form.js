@@ -29,7 +29,7 @@ const Formulario = styled.form`
   @media (max-width: 790px) {
   }
   @media (max-width: 650px) {
-    width: 300px;
+    width: 230px;
   }
 `;
 
@@ -47,7 +47,7 @@ const FormInput = styled.input`
   }
   @media (max-width: 650px) {
     flex-direction: column;
-    width: 300px;
+    width: 230px;
   }
 `;
 
@@ -65,7 +65,7 @@ const FormTextArea = styled.textarea`
   }
   @media (max-width: 650px) {
     /* flex-direction: column; */
-    width: 300px;
+    width: 230px;
   }
 `;
 

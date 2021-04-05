@@ -11,8 +11,8 @@ const ImgPortada = styled.img`
     width: 600px;
   }
   @media (max-width: 650px) {
-    height: 500px;
-    width: 500px;
+    height: 350px;
+    width: 350px;
   }
 `;
 
@@ -33,8 +33,7 @@ const MainTitle = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 100%;
-  width: 100%;
+  /* width: 100%; */
   background: linear-gradient(-45deg, #bdc3c7, #ecf0f1, #e74c3c, #c0392b);
   background-size: 400% 400%;
   animation: ${Gradient} 10s ease infinite;

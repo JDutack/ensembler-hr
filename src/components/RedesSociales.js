@@ -20,11 +20,11 @@ const IcoRedes = styled.img`
   }
 `;
 
-const RedesSociales = ({ img1, img2 }) => {
+const RedesSociales = ({ linke, whats }) => {
   return (
     <SocialIcons>
-      <IcoRedes src={img1} alt=""></IcoRedes>
-      <IcoRedes src={img2} alt=""></IcoRedes>
+      <IcoRedes src={linke} alt=""></IcoRedes>
+      <IcoRedes src={whats} alt=""></IcoRedes>
     </SocialIcons>
   );
 };

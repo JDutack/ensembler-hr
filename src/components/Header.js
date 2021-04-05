@@ -4,11 +4,11 @@ import styled from 'styled-components';
 import icoImg from '../assets/ofkkbMI.png';
 
 const HeaderAll = styled.header`
+  /* width: 100%; */
   display: flex;
   align-items: center;
   justify-content: stretch;
-  width: 1550px;
-  position: fixed;
+  width: 100%;
   background-color: rgba(255, 255, 255, 0.8);
   height: 110px;
   @media (max-width: 790px) {
@@ -31,8 +31,8 @@ const HeaderImg = styled.img`
     height: 90px;
   }
   @media (max-width: 650px) {
-    width: 60px;
-    height: 60px;
+    width: 40px;
+    height: 40px;
   }
 `;
 
@@ -60,15 +60,15 @@ const HeaderLink = styled.div`
   }
   @media (max-width: 650px) {
     font-size: 10px;
-    padding: 15px;
+    padding: 10px;
   }
 `;
 
 const Header = () => {
   return (
     <HeaderAll>
-      <HeaderLink href="/" id="isologotipo">
-        <Link>
+      <HeaderLink>
+        <Link to="/">
           <HeaderImg src={icoImg} alt="isologotipo" />
         </Link>
       </HeaderLink>
