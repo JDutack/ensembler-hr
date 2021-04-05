@@ -1,122 +1,91 @@
-import React from 'react';
-import styled from 'styled-components';
-
-const FormularioEncuesta = styled.div`
-  display: flex;
-  font-size: 25px;
-  font-family: 'Raleway', sans-serif;
-  color: #de1d26;
-  background-color: white;
-  padding: 50px;
-  margin: 70px;
-  border-radius: 25px;
-  box-shadow: 0px -3px 7px 3px rgba(0, 0, 0, 0.88);
-  -webkit-box-shadow: 0px -3px 7px 3px rgba(0, 0, 0, 0.88);
-  -moz-box-shadow: 0px -3px 7px 3px rgba(0, 0, 0, 0.88);
-  @media (max-width: 790px) {
-    font-size: 20px;
-  }
-  @media (max-width: 650px) {
-    font-size: 15px;
-  }
-`;
-
-const Formulario = styled.form`
-  height: max-content;
-  display: flex;
-  width: 400px;
-  flex-direction: column;
-  @media (max-width: 790px) {
-  }
-  @media (max-width: 650px) {
-    width: 230px;
-  }
-`;
-
-const FormInput = styled.input`
-  margin-bottom: 20px;
-  align-self: center;
-  width: 90%;
-  height: 30px;
-  border: none;
-  border-bottom: 2px solid #de1d26;
-  &:focus {
-    outline: none;
-  }
-  @media (max-width: 790px) {
-  }
-  @media (max-width: 650px) {
-    flex-direction: column;
-    width: 230px;
-  }
-`;
-
-const FormTextArea = styled.textarea`
-  margin-bottom: 20px;
-  align-self: center;
-  width: 90%;
-  height: 30px;
-  border: none;
-  border-bottom: 2px solid #de1d26;
-  &:focus {
-    outline: none;
-  }
-  @media (max-width: 790px) {
-  }
-  @media (max-width: 650px) {
-    /* flex-direction: column; */
-    width: 230px;
-  }
-`;
-
-const FormLabel = styled.label``;
-
-const FormButton = styled.button`
-  width: 100%;
-  border-radius: 15px;
-  padding: 10px 18px;
-  font-size: 20px;
-  margin-top: 30px;
-  background-color: white;
-  border: 2px solid #de1d26;
-  color: #de1d26;
-  transition-duration: 1s;
-  cursor: pointer;
-  &:hover {
-    background-color: #de1d26;
-    color: white;
-  }
-  @media (max-width: 790px) {
-    font-size: 17px;
-    font-weight: bold;
-  }
-  @media (max-width: 650px) {
-    font-size: 15px;
-    /* font-weight: bold; */
-  }
-`;
+import React, { useState } from 'react';
+import {
+  FormularioEncuesta,
+  Formulario,
+  FormInput,
+  FormTextArea,
+  FormLabel,
+  FormButton,
+} from '../styles/StylesForm';
 
 const Form = () => {
+  //state de formulario
+  const [user, actualizarUser] = useState({
+    nombre: '',
+    apellido: '',
+    correo: '',
+    consulta: '',
+  });
+
+  //estado de error
+  const [error, actualizarError] = useState(false);
+
+  //funcion de actualizacion de estado en un input
+  const actualizarState = (e) => {
+    actualizarUser({
+      ...user,
+      [e.target.name]: e.target.value,
+    });
+  };
+
+  //extraigo valores
+  const { nombre, apellido, correo, consulta } = user;
+
+  //accionar el btn
+
+  const submitUser = (e) => {
+    e.preventDefault();
+
+    //Validar
+    if (
+      nombre.trim() === '' ||
+      apellido.trim() === '' ||
+      correo.trim() === '' ||
+      consulta.trim() === ''
+    ) {
+      actualizarError(true);
+      return;
+    }
+    //Eliminar msj previo
+    actualizarError(false);
+
+    //Asignar ID
+    // cita.id = uuidv4();
+
+    //creo cita
+    // crearCita(cita);
+
+    //reinicio el form
+    actualizarUser({
+      nombre: '',
+      apellido: '',
+      correo: '',
+      consulta: '',
+    });
+  };
+
+  console.log(user);
   return (
     <FormularioEncuesta>
-      <Formulario>
+      {error ? <p>Todos los campos son obligatorios</p> : null}
+      <Formulario onSubmit={submitUser}>
         <FormLabel htmlFor="nombre">Nombre</FormLabel>
 
-        <FormInput type="text" id="nombre" />
+        <FormInput type="text" id="nombre" onChange={actualizarState} />
 
         <FormLabel htmlFor="apellido">Apellido</FormLabel>
 
-        <FormInput type="text" id="apellido" />
+        <FormInput type="text" id="apellido" onChange={actualizarState} />
 
         <FormLabel htmlFor="mail">Correo Electrónico</FormLabel>
 
-        <FormInput type="text" id="mail" />
+        <FormInput type="text" id="mail" onChange={actualizarState} />
 
         <FormLabel htmlFor="consulta">Consulta</FormLabel>
 
-        <FormTextArea type="text" id="consulta" />
+        <FormTextArea type="text" id="consulta" onChange={actualizarState} />
 
-        <FormButton>ENVIAR</FormButton>
+        <FormButton type="submit">ENVIAR</FormButton>
       </Formulario>
     </FormularioEncuesta>
   );

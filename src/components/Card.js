@@ -7,7 +7,7 @@ import RedesSociales from './RedesSociales';
 
 const PersonalCard = styled.div`
   background-color: rgba(193, 197, 201, 0.4);
-  width: 100%;
+  width: 100px;
   height: 400px;
   min-width: 250px;
   margin: 10px;
@@ -23,11 +23,8 @@ const PersonalImage = styled.div`
 `;
 
 const FounderImg = styled.img`
-  margin: auto;
-  width: 140px;
   height: 140px;
   border-radius: 50%;
-  /* border: 4px solid #01bef4; */
   box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 10px 10px 5px 0px rgba(0, 0, 0, 0.75);

@@ -39,7 +39,7 @@ const ConocenosDiv = styled.div`
   display: flex;
   align-content: center;
   justify-content: center;
-  /* width: 700px; */
+  width: 900px;
   padding: 15px;
   font-family: 'Raleway', sans-serif;
   font-size: 20px;
@@ -47,11 +47,16 @@ const ConocenosDiv = styled.div`
   word-spacing: 5px;
   line-height: 30px;
   border-radius: 2px 25px 25px 25px;
+
   background-color: rgba(255, 255, 255, 0.5);
   box-shadow: 0px 0px 37px 17px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: 0px 0px 37px 17px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: 0px 0px 37px 17px rgba(0, 0, 0, 0.75);
-  @media (max-width: 790px) {
+  @media (max-width: 1200px) {
+    width: 600px;
+    font-size: 18px;
+  }
+  @media (max-width: 950px) {
     width: 550px;
     font-size: 15px;
   }
