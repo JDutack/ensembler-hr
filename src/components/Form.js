@@ -49,12 +49,6 @@ const Form = () => {
     //Eliminar msj previo
     actualizarError(false);
 
-    //Asignar ID
-    // cita.id = uuidv4();
-
-    //creo cita
-    // crearCita(cita);
-
     //reinicio el form
     actualizarUser({
       nombre: '',
@@ -68,7 +62,7 @@ const Form = () => {
   return (
     <FormularioEncuesta>
       {error ? <p>Todos los campos son obligatorios</p> : null}
-      <Formulario onSubmit={submitUser}>
+      <Formulario enctype="multipart/form-data" onSubmit={submitUser}>
         <FormLabel htmlFor="nombre">Nombre</FormLabel>
 
         <FormInput type="text" id="nombre" onChange={actualizarState} />
