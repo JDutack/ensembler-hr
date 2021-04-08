@@ -17,13 +17,12 @@ const FlexDiv = styled.div`
   height: 900px;
   display: flex;
   justify-content: space-between;
-  /* border: 1px solid black; */
 `;
 const QuienesSomos = styled.div`
   width: 50%;
   height: min-content;
-  /* border: 1px solid black; */
   margin: 10px;
+  background: white;
   box-shadow: 0px 10px 30px rgba(98, 20, 24, 0.2);
   border-radius: 30px;
   padding: 40px;
@@ -40,25 +39,24 @@ const NosotrosP = styled.p`
   margin-top: 45px;
 `;
 const NuestraMision = styled.div`
+  background: white;
+
   padding: 40px;
-  /* border: 1px solid black; */
   margin: 10px;
   box-shadow: 0px 10px 30px rgba(98, 20, 24, 0.2);
   border-radius: 30px;
 `;
 const NuestrosValores = styled.div`
+  background: white;
+
   padding: 40px;
-  /* border: 1px solid black; */
   margin: 10px;
   box-shadow: 0px 10px 30px rgba(98, 20, 24, 0.2);
   border-radius: 30px;
 `;
 
 const Derecho = styled.div`
-  /* width: 100px; */
   width: 50%;
-  /* height: 100px; */
-  /* border: 1px solid black; */
 `;
 const Titleh1 = styled.h1`
   font-weight: 500;

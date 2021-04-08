@@ -8,7 +8,7 @@ import Footer from '../components/Footer';
 import styled from 'styled-components';
 
 import img from '../assets/headerBack.png';
-const BackgroundHead = styled.div`
+export const BackgroundHead = styled.div`
   background-image: url(${img});
   background-size: 50%;
   background-repeat: no-repeat;

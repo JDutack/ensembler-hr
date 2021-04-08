@@ -3,12 +3,15 @@ import Header from '../components/Header';
 
 import Footer from '../components/Footer';
 import Nosotros from '../components/Nosotros';
+import { BackgroundHead } from './Home';
 
 const QuienesSomos = () => {
   return (
     <Fragment>
-      <Header />
-      <Nosotros />
+      <BackgroundHead>
+        <Header />
+        <Nosotros />
+      </BackgroundHead>
       <Footer />
     </Fragment>
   );

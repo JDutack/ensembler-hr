@@ -4,6 +4,7 @@ import Footer from '../components/Footer';
 import Header from '../components/Header';
 import { NosotrosDiv } from '../components/Nosotros';
 import fondo from '../assets/Foto manos.png';
+import { BackgroundHead } from './Home';
 
 const FlexDiv = styled.div`
   width: 1500px;
@@ -29,15 +30,17 @@ const RightBox = styled.div`
 const Contacto = () => {
   return (
     <Fragment>
-      <Header />
-      <NosotrosDiv>
-        <FlexDiv>
-          <LeftBox>
-            <BoxImg src={fondo} alt="" />
-          </LeftBox>
-          <RightBox></RightBox>
-        </FlexDiv>
-      </NosotrosDiv>
+      <BackgroundHead>
+        <Header />
+        <NosotrosDiv>
+          <FlexDiv>
+            <LeftBox>
+              <BoxImg src={fondo} alt="" />
+            </LeftBox>
+            <RightBox></RightBox>
+          </FlexDiv>
+        </NosotrosDiv>
+      </BackgroundHead>
       <Footer />
     </Fragment>
   );
