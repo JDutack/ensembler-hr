@@ -1,20 +1,23 @@
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import { GlobalStyle } from './styles/GlobalStyles';
 
+import './styles/styles.css';
 import Home from './pages/Home';
+import QuienesSomos from './pages/QuienesSomos';
+import Capacitaciones from './pages/Capacitaciones';
 import Contacto from './pages/Contacto';
-import Conocenos from './pages/Conocenos';
 
 function App() {
   return (
     <Router>
-      <GlobalStyle />
       <Switch>
         <Route exact path="/">
           <Home />
         </Route>
-        <Route path="/conocenos">
-          <Conocenos />
+        <Route path="/quienessomos">
+          <QuienesSomos />
+        </Route>
+        <Route path="/capacitaciones">
+          <Capacitaciones />
         </Route>
         <Route path="/contacto">
           <Contacto />
