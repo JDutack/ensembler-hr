@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const FooterSection = styled.footer`
-  color: white;
+  color: var(--ensembleBtnLetter);
   display: flex;
   flex-direction: column;
   background-color: var(--footerBack);
@@ -30,7 +30,7 @@ export const FooterLi = styled.li`
   font-weight: 400;
   font-size: 12px;
   padding-bottom: 15px;
-  color: white;
+  color: var(--ensembleBtnLetter);
   list-style: none;
 `;
 
@@ -46,11 +46,11 @@ export const FooterDown = styled.div`
 `;
 
 export const DownLeft = styled.p`
-  color: white;
+  color: var(--ensembleBtnLetter);
 `;
 
 export const DownRigth = styled.p`
-  color: white;
+  color: var(--ensembleBtnLetter); ;
 `;
 export const RedesImg = styled.img`
   height: 80px;

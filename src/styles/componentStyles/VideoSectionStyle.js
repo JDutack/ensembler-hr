@@ -177,9 +177,10 @@ export const TitleBtn = styled.button`
   border-radius: 10px;
   cursor: pointer;
   border: none;
+  transition: color 1s, background-color 1s;
   &:hover {
-    background-color: var(--headerHover);
-    font-weight: 500;
+    background-color: var(--ensembleBtnLetter);
+    color: var(--ensembleRed);
   }
   @media (max-width: 970px) {
   }

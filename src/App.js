@@ -5,6 +5,8 @@ import Home from './pages/Home';
 import QuienesSomos from './pages/QuienesSomos';
 import Capacitaciones from './pages/Capacitaciones';
 import Contacto from './pages/Contacto';
+import Cursos from './pages/Cursos';
+import Error from './pages/Error';
 
 function App() {
   return (
@@ -21,6 +23,12 @@ function App() {
         </Route>
         <Route path="/contacto">
           <Contacto />
+        </Route>
+        <Route path="/cursos">
+          <Cursos />
+        </Route>
+        <Route path="/*">
+          <Error />
         </Route>
       </Switch>
     </Router>

@@ -15,26 +15,61 @@ import {
   EmployerP,
   EmployerSpan,
 } from '../styles/componentStyles/CarrouselStyle.js';
-import 'swiper/swiper-bundle.css';
+
+import 'swiper/swiper-bundle.min.css';
+import 'swiper/swiper-bundle';
 import belen from '../assets/belen.jfif';
 import facundo from '../assets/facundo.jfif';
 
+// const swiper = new Swiper('.swiper-container', {
+//   speed: 400,
+//   spaceBetween: 100,
+// });
+// var slideIndex = 0;
+function showSlides() {
+  let slides = document.getElementsByClassName('mySlides');
+  let arraySlides = [...slides];
+  console.log(arraySlides);
+  // setInterval(() => {
+  //   console.log(Swiper.activeIndex);
+  // }, 2000);
+  // setTimeout(showSlides, 2000);
+}
 const Carrousel = () => {
+  showSlides();
+  // let swiper = new Swiper('.swiper-container', {
+  //   navigation: {
+  //     nextEl: '.swiper-button-next',
+  //     prevEl: '.swiper-button-prev',
+  //   },
+  // });
+
+  // Now you can use all slider methods like
+  // swiper.slideNext();
+
+  // const slidechangefn = () => {
+  //   setInterval(() => {
+  //     Swiper.SlideChange();
+  //   }, 2000);
+  // };
   return (
     <SliderBackDiv>
       <CarrouselSlider>
         <TitleDiv>
           <TitleH1>NUESTRO EQUIPO</TitleH1>
         </TitleDiv>
+
         <Swiper
+          className="swiper-container"
           spaceBetween={50}
           slidesPerView={1}
           navigation
+          autoplay
           pagination={{ clickable: true }}
           onSwiper={(swiper) => console.log(swiper)}
           onSlideChange={() => console.log('slide change')}
         >
-          <SwiperSlide>
+          <SwiperSlide className="mySlides">
             <SliderDiv>
               <EmployerDiv>
                 <ImgBelen src={belen} alt="" />
@@ -47,7 +82,7 @@ const Carrousel = () => {
               </EmployerDiv>
             </SliderDiv>
           </SwiperSlide>
-          <SwiperSlide>
+          <SwiperSlide className="mySlides">
             <SliderDiv>
               <EmployerDiv>
                 <ImgBelen src={facundo} alt="" />

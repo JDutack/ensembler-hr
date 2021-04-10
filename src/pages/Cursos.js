@@ -1,19 +1,20 @@
 import React, { Fragment } from 'react';
-import Capacitate from '../components/Capacitate';
+import Courses from '../components/Courses';
 import Footer from '../components/Footer';
 import Header from '../components/Header';
 import { BackgroundHead } from './Home';
 
-const Capacitaciones = () => {
+const Cursos = () => {
   return (
     <Fragment>
       <BackgroundHead>
         <Header />
-        <Capacitate />
+        <Courses />
       </BackgroundHead>
+
       <Footer />
     </Fragment>
   );
 };
 
-export default Capacitaciones;
+export default Cursos;

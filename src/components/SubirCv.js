@@ -3,7 +3,6 @@ import React from 'react';
 import { TitleBtn } from '../styles/componentStyles/VideoSectionStyle';
 import ensembleImg from '../assets/title.png';
 import imgCv from '../assets/resume.png';
-import { Link } from 'react-router-dom';
 
 import miniInsta from '../assets/instaRed.svg';
 import miniLinke from '../assets/Vector (1).png';
@@ -32,7 +31,9 @@ const SubirCv = () => {
             ¿Te gustaria dejarnos tu CV para <br></br> futuras busquedas
             laborales?
           </CvP>
-          <TitleBtn>QUERES SUBIR TU CV</TitleBtn>
+          <a href="mailto:info@ensemble-hr.com">
+            <TitleBtn> QUERES SUBIR TU CV</TitleBtn>
+          </a>
         </TextDiv>
       </CvSection>
       <ContactSection>
@@ -41,21 +42,23 @@ const SubirCv = () => {
           <RedesP>Seguinos en nuestras Redes Sociales</RedesP>
           <RedesLink>
             <img src={miniInsta} alt="" width="15" />
-            <Link
+            <a
               style={{ textDecoration: 'none', color: ' rgb(220, 29, 37)' }}
-              to="/"
+              href="https://www.instagram.com/ensemblehrar/"
+              target="blank"
             >
-              &nbsp; https://www.linkedin.com/company/ensemble-hr/
-            </Link>
+              &nbsp; https://www.instagram.com/ensemblehrar/
+            </a>
           </RedesLink>
           <RedesLink>
             <img src={miniLinke} alt="" width="15" height="15" />
-            <Link
+            <a
               style={{ textDecoration: 'none', color: ' rgb(220, 29, 37)' }}
-              to="/"
+              href="https://www.linkedin.com/company/ensemble-hr/"
+              target="blank"
             >
               &nbsp; https://www.linkedin.com/company/ensemble-hr/
-            </Link>
+            </a>
           </RedesLink>
         </RedesDiv>
       </ContactSection>

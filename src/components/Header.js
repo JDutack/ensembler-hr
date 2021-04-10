@@ -11,11 +11,6 @@ import {
 } from '../styles/componentStyles/HeaderStyles';
 
 const Header = () => {
-  // let className = 'menu';
-  // if (this.props.isActive) {
-  //   className += ' menu-active';
-  // }
-
   return (
     <HeaderAll>
       <ImageLink>

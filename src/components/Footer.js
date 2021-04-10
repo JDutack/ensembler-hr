@@ -1,8 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 
-// import ensembleImg from '../assets/title.png';
-// import lnkd from '../assets/ofkkbMI.png';
 import {
   FooterSection,
   FooterUp,
@@ -29,25 +27,49 @@ const Footer = () => {
         <UpLeft>
           <ImgDiv src={footerImg} />
           <FooterUl>
-            <FooterLi>HOME</FooterLi>
-            <FooterLi>QUIENES SOMOS</FooterLi>
-            <FooterLi>CAPACITACIONES</FooterLi>
-            <FooterLi>CONTACTO</FooterLi>
+            <Link
+              style={{ textDecoration: 'none', color: ' var(--headerLink)' }}
+              to="/"
+            >
+              <FooterLi>HOME</FooterLi>
+            </Link>
+            <Link
+              style={{ textDecoration: 'none', color: ' var(--headerLink)' }}
+              to="/quienessomos"
+            >
+              <FooterLi>QUIENES SOMOS</FooterLi>
+            </Link>
+
+            <Link
+              style={{ textDecoration: 'none', color: ' var(--headerLink)' }}
+              to="/capacitaciones"
+            >
+              <FooterLi>CAPACITACIONES</FooterLi>
+            </Link>
+            <Link
+              style={{ textDecoration: 'none', color: ' var(--headerLink)' }}
+              to="/contacto"
+            >
+              <FooterLi>CONTACTO</FooterLi>
+            </Link>
           </FooterUl>
         </UpLeft>
         <UpRight>
-          <Link
-            to="https://api.whatsapp.com/send?phone=5491165282142&text=Hola!%20Quieres%20contactarte%20con%20nosotros!"
-            target="_blank"
+          <a
+            href="https://www.linkedin.com/company/ensemble-hr/"
+            target="blank"
           >
             <RedesImg src={icoLkd} alt="" />
-          </Link>
-          <Link>
+          </a>
+          <a href="https://www.instagram.com/ensemblehrar/" target="blank">
             <RedesImg src={icoInsta} alt="" />
-          </Link>
-          <Link>
+          </a>
+          <a
+            href="https://api.whatsapp.com/send?phone=541134276663&text= Hola!%20Quiero%20contratar%20sus%20servicios!"
+            target="blank"
+          >
             <RedesImg src={icoWsp} alt="" />
-          </Link>
+          </a>
         </UpRight>
       </FooterUp>
       <hr />
