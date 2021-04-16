@@ -32,7 +32,7 @@ const SubirCv = () => {
             laborales?
           </CvP>
           <a href="mailto:info@ensemble-hr.com">
-            <TitleBtn> QUERES SUBIR TU CV</TitleBtn>
+            <TitleBtn>QUERES SUBIR TU CV</TitleBtn>
           </a>
         </TextDiv>
       </CvSection>
@@ -47,7 +47,7 @@ const SubirCv = () => {
               href="https://www.instagram.com/ensemblehrar/"
               target="blank"
             >
-              &nbsp; https://www.instagram.com/ensemblehrar/
+              &nbsp;@ensemblehrar
             </a>
           </RedesLink>
           <RedesLink>
@@ -57,7 +57,7 @@ const SubirCv = () => {
               href="https://www.linkedin.com/company/ensemble-hr/"
               target="blank"
             >
-              &nbsp; https://www.linkedin.com/company/ensemble-hr/
+              &nbsp; linkedin.com/company/ensemble-hr/
             </a>
           </RedesLink>
         </RedesDiv>

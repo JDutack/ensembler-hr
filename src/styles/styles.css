@@ -17,6 +17,9 @@ body {
   box-sizing: border-box;
   max-width: 1920px;
   height: min-content;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
 }
 
 h1,
@@ -47,7 +50,19 @@ a {
 
 .swiper-button-prev,
 .swiper-button-next {
-  padding: 0 200px;
+  padding: 0 10%;
+}
+@media (max-width: 790px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    padding: 0 2%;
+  }
+}
+@media (max-width: 340px) {
+  .swiper-button-prev,
+  .swiper-button-next {
+    visibility: hidden;
+  }
 }
 
 hr {

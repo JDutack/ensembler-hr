@@ -8,12 +8,12 @@ import Footer from '../components/Footer';
 import styled from 'styled-components';
 
 import img from '../assets/headerBack.png';
+
 export const BackgroundHead = styled.div`
   background-image: url(${img});
   background-size: 50%;
   background-repeat: no-repeat;
   background-position-x: right;
-  /* background-attachment: fixed; */
 `;
 
 const Home = () => {

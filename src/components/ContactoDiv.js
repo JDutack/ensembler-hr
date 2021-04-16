@@ -1,7 +1,7 @@
 import React from 'react';
 import styled from 'styled-components';
 
-import { NosotrosDiv } from '../components/Nosotros';
+import { NosotrosDiv } from '../styles/componentStyles/NosotrosStyles';
 import fondo from '../assets/Foto manos.png';
 import Form from './Form';
 

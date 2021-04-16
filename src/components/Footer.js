@@ -74,7 +74,9 @@ const Footer = () => {
       </FooterUp>
       <hr />
       <FooterDown>
-        <DownLeft>@ 2021 Ensemble HR todos los derechos reservados</DownLeft>
+        <DownLeft>
+          &copy; 2021 Ensemble HR todos los derechos reservados
+        </DownLeft>
         <DownRigth>Diseño y desarrollo...</DownRigth>
       </FooterDown>
     </FooterSection>
