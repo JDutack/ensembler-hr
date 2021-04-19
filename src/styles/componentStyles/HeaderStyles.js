@@ -44,21 +44,22 @@ export const HeaderLink = styled.div`
   line-height: 21px;
   text-align: center;
   padding: 14px 40px;
-  transition: background-color 1.3s, font-weight 1s;
+  transition: background-color 1.3s;
 
   &:hover {
     background-color: var(--headerHover);
-    font-weight: 500;
   }
   &:active {
     background-color: var(--headerHover);
     font-weight: 500;
   }
   @media (max-width: 970px) {
+    display: none;
     font-size: 12px;
     padding: 6px 20px;
   }
   @media (max-width: 650px) {
+    display: none;
     font-size: 8px;
     padding: 0 10px;
   }
@@ -74,5 +75,17 @@ export const ImageLink = styled.div`
   @media (max-width: 865px) {
   }
   @media (max-width: 650px) {
+  }
+`;
+
+export const SimpleMenu = styled.div`
+  display: none;
+  background-color: red;
+
+  @media (max-width: 970px) {
+    display: block;
+  }
+  @media (max-width: 650px) {
+    display: block;
   }
 `;

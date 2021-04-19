@@ -1,7 +1,7 @@
 import React from 'react';
-
 import { Link } from 'react-router-dom';
 import icoImg from '../assets/ofkkbMI.png';
+import SimpleMenu from '../components/SimpleMenu';
 import {
   HeaderAll,
   HeaderImg,
@@ -10,7 +10,9 @@ import {
   ImageLink,
 } from '../styles/componentStyles/HeaderStyles';
 
+
 const Header = () => {
+
   return (
     <HeaderAll>
       <ImageLink>
@@ -19,6 +21,7 @@ const Header = () => {
         </Link>
       </ImageLink>
       <Navegacion>
+      <SimpleMenu />
         <HeaderLink>
           <Link
             style={{ textDecoration: 'none', color: ' var(--headerLink)' }}
@@ -55,5 +58,4 @@ const Header = () => {
     </HeaderAll>
   );
 };
-
 export default Header;

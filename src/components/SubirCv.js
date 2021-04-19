@@ -28,11 +28,11 @@ const SubirCv = () => {
         </div>
         <TextDiv>
           <CvP>
-            ¿Te gustaria dejarnos tu CV para <br></br> futuras busquedas
+            ¿Te gustaría dejarnos tu CV para <br></br> futuras búsquedas
             laborales?
           </CvP>
           <a href="mailto:info@ensemble-hr.com">
-            <TitleBtn>QUERES SUBIR TU CV</TitleBtn>
+            <TitleBtn>¿QUERÉS SUBIR TU CV?</TitleBtn>
           </a>
         </TextDiv>
       </CvSection>
