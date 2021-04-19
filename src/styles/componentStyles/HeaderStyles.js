@@ -33,6 +33,7 @@ export const HeaderImg = styled.img`
 
 export const Navegacion = styled.nav`
   display: flex;
+  position: relative;
   flex-direction: row;
 `;
 
@@ -44,7 +45,7 @@ export const HeaderLink = styled.div`
   line-height: 21px;
   text-align: center;
   padding: 14px 40px;
-  transition: background-color 1.3s, font-weight 1s;
+  transition: background-color 1.3s;
 
   &:hover {
     opacity: 0.8;
@@ -57,6 +58,11 @@ export const HeaderLink = styled.div`
     font-size: 12px;
     padding: 6px 20px;
   }
+
+  @media (max-width: 700px) {
+    display: none;
+  }
+
   @media (max-width: 650px) {
     font-size: 8px;
     padding: 0 10px;
@@ -73,5 +79,17 @@ export const ImageLink = styled.div`
   @media (max-width: 865px) {
   }
   @media (max-width: 650px) {
+  }
+`;
+
+export const SimpleMenu = styled.div`
+  display: none;
+  background-color: red;
+
+  @media (max-width: 970px) {
+    display: block;
+  }
+  @media (max-width: 650px) {
+    display: block;
   }
 `;

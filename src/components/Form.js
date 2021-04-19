@@ -215,7 +215,7 @@ const Form = () => {
 
         <p>
           Estoy de acuerdo con nuestras
-          <Link to="/"> politicas de privacidad</Link> .
+          <Link to="/"> políticas de privacidad</Link> .
         </p>
       </CheckboxDiv>
 

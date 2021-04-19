@@ -100,7 +100,7 @@ const Footer = () => {
               <p>
                 <u>Diseño UX-UI:</u>
               </p>
-              <name>Annie Oestereicher</name>
+              <p>Annie Oestereicher</p>
               <div>
                 <a
                   href="https://www.linkedin.com/company/ensemble-hr/"
@@ -120,7 +120,7 @@ const Footer = () => {
               <p>
                 <u>Desarrollo web:</u>
               </p>
-              <name>Damian Giannico</name>
+              <p>Damian Giannico</p>
               <div>
                 <a
                   href="https://www.linkedin.com/company/ensemble-hr/"
@@ -140,7 +140,7 @@ const Footer = () => {
               <p>
                 <u>Desarrollo web:</u>
               </p>
-              <name>Juan</name>
+              <p>Juan</p>
               <div>
                 <a
                   href="https://www.linkedin.com/company/ensemble-hr/"

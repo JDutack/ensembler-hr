@@ -1,11 +1,9 @@
 import React from 'react';
 
 import { TitleBtn } from '../styles/componentStyles/VideoSectionStyle';
-import ensembleImg from '../assets/title.png';
+
 import imgCv from '../assets/resume.png';
 
-import miniInsta from '../assets/instaRed.svg';
-import miniLinke from '../assets/Vector (1).png';
 import {
   CvDiv,
   CvSection,
@@ -27,11 +25,11 @@ const SubirCv = () => {
         </div>
         <TextDiv>
           <CvP>
-            ¿Te gustaria dejarnos tu CV para <br></br> futuras busquedas
+            ¿Te gustaría dejarnos tu CV para <br></br> futuras búsquedas
             laborales?
           </CvP>
           <a href="mailto:info@ensemble-hr.com">
-            <TitleBtn>QUERES SUBIR TU CV</TitleBtn>
+            <TitleBtn>¿QUERÉS SUBIR TU CV?</TitleBtn>
           </a>
         </TextDiv>
       </CvSection>
