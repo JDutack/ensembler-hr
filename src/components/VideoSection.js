@@ -12,10 +12,11 @@ import {
   TitleSpan,
   TitleBtn,
 } from '../styles/componentStyles/VideoSectionStyle';
+import videoPresentacion from '../assets/presentacion.mp4';
 import ensembleImg from '../assets/title.png';
-// import video from '../assets/vídeo miradas final2.mp4';
 
 const VideoSection = () => {
+  console.log(ReactPlayer);
   return (
     <Container>
       <PresentacionSection>
@@ -31,12 +32,12 @@ const VideoSection = () => {
       </PresentacionSection>
       <VideoPresentacion>
         <SoloVideo>
-          {/* <Videito src={video}></Videito> */}
           <ReactPlayer
             // url={video}
-            url="https://www.youtube.com/watch?v=KmOBzrjFnKY&list=RDKmOBzrjFnKY&start_radio=1&ab_channel=LosTabaleros"
+            url={videoPresentacion}
             className="react-player"
             playing
+            controls
             width="100%"
             height="100%"
           />

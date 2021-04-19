@@ -47,8 +47,7 @@ export const HeaderLink = styled.div`
   transition: background-color 1.3s, font-weight 1s;
 
   &:hover {
-    background-color: var(--headerHover);
-    font-weight: 500;
+    opacity: 0.8;
   }
   &:active {
     background-color: var(--headerHover);

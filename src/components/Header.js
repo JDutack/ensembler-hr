@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Link } from 'react-router-dom';
+import { Link, NavLink } from 'react-router-dom';
 import icoImg from '../assets/ofkkbMI.png';
 import {
   HeaderAll,
@@ -20,36 +20,60 @@ const Header = () => {
       </ImageLink>
       <Navegacion>
         <HeaderLink>
-          <Link
+          <NavLink
             style={{ textDecoration: 'none', color: ' var(--headerLink)' }}
             to="/"
+            activeStyle={{
+              backgroundColor: 'var(--headerHover)',
+              fontWeight: '500',
+              borderRadius: '50px',
+              padding: '14px 40px',
+            }}
           >
             Home
-          </Link>
+          </NavLink>
         </HeaderLink>
         <HeaderLink>
-          <Link
+          <NavLink
             style={{ textDecoration: 'none', color: ' var(--headerLink)' }}
             to="/quienessomos"
+            activeStyle={{
+              backgroundColor: 'var(--headerHover)',
+              fontWeight: '500',
+              borderRadius: '50px',
+              padding: '14px 40px',
+            }}
           >
             Nosotros
-          </Link>
+          </NavLink>
         </HeaderLink>
         <HeaderLink>
-          <Link
+          <NavLink
             style={{ textDecoration: 'none', color: ' var(--headerLink)' }}
             to="/capacitaciones"
+            activeStyle={{
+              backgroundColor: 'var(--headerHover)',
+              fontWeight: '500',
+              borderRadius: '50px',
+              padding: '14px 40px',
+            }}
           >
             Capacitaciones
-          </Link>
+          </NavLink>
         </HeaderLink>
         <HeaderLink>
-          <Link
+          <NavLink
             style={{ textDecoration: 'none', color: ' var(--headerLink)' }}
             to="/contacto"
+            activeStyle={{
+              backgroundColor: 'var(--headerHover)',
+              fontWeight: '500',
+              borderRadius: '50px',
+              padding: '14px 40px',
+            }}
           >
             Contacto
-          </Link>
+          </NavLink>
         </HeaderLink>
       </Navegacion>
     </HeaderAll>

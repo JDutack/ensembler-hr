@@ -6,6 +6,10 @@ export const NosotrosDiv = styled.div`
   justify-content: center;
   /* height: 1000px; */
   margin: 100px;
+  @media (max-width: 600px) {
+    justify-content: flex-start;
+    margin: 0;
+  }
 `;
 export const FlexDiv = styled.div`
   width: 1100px;
@@ -39,6 +43,9 @@ export const QuienesSomos = styled.div`
   padding: 40px;
   @media (max-width: 750px) {
     width: 80%;
+  }
+  @media (max-width: 600px) {
+    box-shadow: none;
   }
 `;
 
@@ -75,14 +82,19 @@ export const NuestraMision = styled.div`
   margin: 10px;
   box-shadow: 0px 10px 30px rgba(98, 20, 24, 0.2);
   border-radius: 30px;
+  @media (max-width: 600px) {
+    box-shadow: none;
+  }
 `;
 export const NuestrosValores = styled.div`
   background: white;
-
   padding: 40px;
   margin: 10px;
   box-shadow: 0px 10px 30px rgba(98, 20, 24, 0.2);
   border-radius: 30px;
+  @media (max-width: 600px) {
+    box-shadow: none;
+  }
 `;
 
 export const Derecho = styled.div`

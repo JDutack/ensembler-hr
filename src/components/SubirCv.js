@@ -13,11 +13,10 @@ import {
   ContactSection,
   CvP,
   TextDiv,
-  ContactImg,
-  RedesLink,
-  RedesP,
-  RedesDiv,
 } from '../styles/componentStyles/SubirCvStyle.js';
+import icoLkd from '../assets/Vector (1).svg';
+import icoInsta from '../assets/Group 33.svg';
+import { RedesImg } from '../styles/componentStyles/FooterStyle';
 
 const SubirCv = () => {
   return (
@@ -37,30 +36,12 @@ const SubirCv = () => {
         </TextDiv>
       </CvSection>
       <ContactSection>
-        <ContactImg src={ensembleImg} alt="" />
-        <RedesDiv>
-          <RedesP>Seguinos en nuestras Redes Sociales</RedesP>
-          <RedesLink>
-            <img src={miniInsta} alt="" width="15" />
-            <a
-              style={{ textDecoration: 'none', color: ' rgb(220, 29, 37)' }}
-              href="https://www.instagram.com/ensemblehrar/"
-              target="blank"
-            >
-              &nbsp;@ensemblehrar
-            </a>
-          </RedesLink>
-          <RedesLink>
-            <img src={miniLinke} alt="" width="15" height="15" />
-            <a
-              style={{ textDecoration: 'none', color: ' rgb(220, 29, 37)' }}
-              href="https://www.linkedin.com/company/ensemble-hr/"
-              target="blank"
-            >
-              &nbsp; linkedin.com/company/ensemble-hr/
-            </a>
-          </RedesLink>
-        </RedesDiv>
+        <a href="https://www.instagram.com/ensemblehrar/" target="blank">
+          <RedesImg src={icoInsta} alt="" />
+        </a>
+        <a href="https://www.linkedin.com/company/ensemble-hr/" target="blank">
+          <RedesImg src={icoLkd} alt="" />
+        </a>
       </ContactSection>
     </CvDiv>
   );

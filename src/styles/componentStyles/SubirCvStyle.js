@@ -28,6 +28,7 @@ export const CvSection = styled.section`
   margin-right: 20px;
   padding: 0 70px;
   background-color: rgb(254, 245, 246);
+  border-radius: 20px;
   @media (max-width: 730px) {
     width: 100%;
     margin-right: 0px;
@@ -66,10 +67,15 @@ export const ContactSection = styled.section`
   display: flex;
   align-items: center;
   justify-content: center;
-  flex-direction: column;
+
   width: 45%;
   margin-left: 20px;
-  background-color: rgb(254, 245, 246);
+  background-color: var(--ensembleRed);
+  border-radius: 20px;
+  & img {
+    height: 100px;
+    margin: 10px;
+  }
   @media (max-width: 730px) {
     display: none;
   }
@@ -116,80 +122,4 @@ export const TextDiv = styled.div`
   flex-direction: column;
   width: 100%;
   align-items: flex-start;
-`;
-
-export const ContactImg = styled.img`
-  width: 320px;
-  @media (max-width: 1310px) {
-    width: 250px;
-  }
-  @media (max-width: 1176px) {
-    width: 220px;
-  }
-  @media (max-width: 1100px) {
-    width: 170px;
-  }
-  @media (max-width: 907px) {
-    width: 100px;
-  }
-  @media (max-width: 650px) {
-    width: 90px;
-  }
-  @media (max-width: 480px) {
-    width: 80px;
-  }
-  @media (max-width: 330px) {
-    width: 40px;
-  }
-`;
-
-export const RedesLink = styled.div`
-  font-weight: 500;
-  font-size: 17px;
-  font-family: 'Rubik', sans-serif;
-  margin-bottom: 8px;
-  @media (max-width: 1300px) {
-    font-size: 16px;
-  }
-  @media (max-width: 1065px) {
-    font-size: 15px;
-  }
-
-  @media (max-width: 835px) {
-    font-size: 12px;
-  }
-  @media (max-width: 660px) {
-    font-size: 10px;
-  }
-  @media (max-width: 500px) {
-    font-size: 8px;
-  }
-`;
-
-export const RedesP = styled.p`
-  text-align: left;
-  color: #393737;
-  font-weight: 500;
-  font-size: 18px;
-  margin-bottom: 20px;
-  @media (max-width: 1300px) {
-    font-size: 17px;
-  }
-  @media (max-width: 1065px) {
-    font-size: 16px;
-  }
-
-  @media (max-width: 835px) {
-    font-size: 14px;
-  }
-  @media (max-width: 660px) {
-    font-size: 11px;
-  }
-  @media (max-width: 500px) {
-    font-size: 9px;
-  }
-`;
-
-export const RedesDiv = styled.div`
-  text-align: left;
 `;

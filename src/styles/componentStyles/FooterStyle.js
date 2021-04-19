@@ -3,78 +3,28 @@ import styled from 'styled-components';
 export const FooterSection = styled.footer`
   color: var(--ensembleBtnLetter);
   display: flex;
-  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 0;
+  padding: 50px 0;
   background-color: var(--footerBack);
+`;
+
+export const FooterSection2 = styled.footer`
+  flex-direction: column;
+  width: 80%;
 `;
 
 export const FooterUp = styled.div`
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  height: 280px;
-  @media (max-width: 1314px) {
-    padding-top: 80px;
-  }
-  @media (max-width: 1035px) {
-    height: 200px;
-  }
-  @media (max-width: 945px) {
-    height: 150px;
-  }
-  @media (max-width: 855px) {
-    height: 90px;
-  }
-  @media (max-width: 500px) {
-    justify-content: center;
-  }
+  align-items: center;
+  justify-content: space-between;
 `;
 
-export const UpLeft = styled.div`
-  display: flex;
-  padding-top: 100px;
-  @media (max-width: 1314px) {
-    padding-top: 80px;
-  }
-  @media (max-width: 1035px) {
-    padding-top: 50px;
-  }
-  @media (max-width: 945px) {
-    padding-top: 30px;
-  }
-  @media (max-width: 855px) {
-    padding-top: 0px;
-  }
-`;
+export const UpLeft = styled.div``;
 
-export const ImgDiv = styled.img`
-  height: 90px;
-  padding-right: 100px;
-  @media (max-width: 1314px) {
-    height: 60px;
-    padding-right: 90px;
-  }
-  @media (max-width: 1035px) {
-    height: 50px;
-    padding-right: 60px;
-  }
-  @media (max-width: 945px) {
-    height: 30px;
-    padding-right: 30px;
-  }
-  @media (max-width: 855px) {
-    height: 20px;
-    padding-right: 0px;
-  }
-  @media (max-width: 500px) {
-    height: 40px;
-  }
-`;
+export const FooterUl = styled.ul``;
 
-export const FooterUl = styled.ul`
-  @media (max-width: 500px) {
-    display: none;
-  }
-`;
 export const FooterLi = styled.li`
   font-weight: 400;
   font-size: 12px;
@@ -100,52 +50,51 @@ export const FooterLi = styled.li`
 `;
 
 export const UpRight = styled.div`
-  padding: 130px;
+  /* display: flex; */
+  /* flex-direction: column;
+  justify-content: flex-end; */
+  padding: 0px;
   @media (max-width: 1314px) {
-    padding: 100px;
+    /* padding: 100px; */
   }
   @media (max-width: 1035px) {
-    padding: 80px;
+    /* padding: 80px; */
   }
   @media (max-width: 945px) {
-    padding: 60px;
+    /* padding: 60px; */
   }
   @media (max-width: 855px) {
-    padding: 20px;
+    /* padding: 20px; */
   }
 `;
 
-export const FooterDown = styled.div`
-  display: flex;
-  justify-content: space-around;
-  height: 70px;
-  font-size: 20px;
-  @media (max-width: 800px) {
-    font-size: 15px;
+export const ImgDiv = styled.img`
+  height: 90px;
+  justify-self: end;
+  @media (max-width: 1314px) {
+    height: 60px;
+    padding-right: 90px;
+  }
+  @media (max-width: 1035px) {
+    height: 50px;
+    padding-right: 60px;
+  }
+  @media (max-width: 945px) {
+    height: 30px;
+    padding-right: 30px;
+  }
+  @media (max-width: 855px) {
+    height: 20px;
+    padding-right: 0px;
   }
   @media (max-width: 500px) {
-    justify-content: center;
-    text-align: center;
-    flex-direction: column;
-    padding: 25px;
-    font-size: 13px;
+    height: 40px;
   }
-`;
-
-export const DownLeft = styled.p`
-  padding: 25px;
-
-  color: var(--ensembleBtnLetter);
-`;
-
-export const DownRigth = styled.p`
-  padding: 25px;
-  color: var(--ensembleBtnLetter);
 `;
 
 export const RedesImg = styled.img`
-  height: 80px;
-  margin-left: 90px;
+  height: 55px;
+  margin-left: 50px;
   @media (max-width: 1314px) {
     height: 50px;
     margin-left: 60px;
@@ -161,5 +110,32 @@ export const RedesImg = styled.img`
   @media (max-width: 855px) {
     /* height: 20px; */
     margin-left: 20px;
+  }
+`;
+
+export const Copyright = styled.p`
+  font-size: 15px;
+  text-align: end;
+  color: #ffffff;
+`;
+
+export const FooterDown = styled.div`
+  display: flex;
+  & section p {
+    font-size: 12px;
+    color: #ffffff;
+  }
+  & section {
+    margin-right: 20px;
+  }
+
+  & section name {
+    color: #ffffff;
+
+    font-size: 12px;
+  }
+  & section img {
+    height: 12px;
+    margin: 4px;
   }
 `;

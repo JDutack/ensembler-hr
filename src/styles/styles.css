@@ -29,7 +29,8 @@ h4,
 span,
 li,
 p,
-label {
+label,
+name {
   font-family: 'Rubik', sans-serif;
   color: var(--lettersColor);
   margin: 0;
@@ -66,5 +67,10 @@ a {
 }
 
 hr {
-  width: 80%;
+  width: 100%;
+}
+
+video:focus {
+  outline: none;
+  cursor: pointer;
 }
